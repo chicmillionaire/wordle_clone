@@ -1,11 +1,18 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import './style.css';
+import GameBoard from './components/GameBoard';
+import GameControls from './components/GameControls';
 
-export default function App() {
+function App() {
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+    <div className="App">
+      <nav>
+        <h1>Wordle</h1>
+      </nav>
+      <GameBoard />
+      <GameControls />
     </div>
   );
 }
+
+export default App;
